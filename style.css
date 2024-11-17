@@ -1,0 +1,100 @@
+body {
+    overflow: hidden;
+    margin: 0;  
+    cursor: pointer;
+}
+* {
+  font-family: 'Poppins', sans-serif;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.game-container {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.game-container button {
+  width: 33%;
+  margin: .5px;
+  cursor: pointer;
+  position: relative;
+  background-color: #36AE7C;
+  border: none;
+  border-radius: 10px;
+}
+.game-container button:hover {
+  opacity: .8;
+}
+.game-container button.p-1:before {
+  content: 'x';
+  font-size: 70px;
+  position: absolute;
+  top: 0;
+  left: 30%;
+  color: #D20062;
+}
+
+.game-container button.p-1 {
+  background-color: #D895DA;
+  border: none;
+  border-radius: 10px;
+}
+
+.game-container button.p-2 {
+  background-color: #77CDFF;
+  border: none;
+  border-radius: 10px;
+}
+
+.game-container button.p-2:before {
+  content: 'o';
+  font-size: 70px;
+  position: absolute;
+  top: 0;
+  left: 30%;
+  color: #00215E;
+}
+
+
+.legend {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.legend span {
+  font-size: 50px;
+  
+}
+
+.legend span.player-1 {
+  color: #D895DA;
+}
+.legend span.player-1:before {
+  content: 'X -';
+  margin-right: 30px;
+  color: #D20062;
+}
+.legend span.player-2 {
+  color: #77CDFF;
+}
+
+.legend span.player-2:before {
+  content: 'O -';
+  margin-right: 30px;
+  color: #00215E;
+}
+
+
+
